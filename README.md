@@ -2,7 +2,7 @@
 
 This repository contains all documentation and planning materials for the **Tech Aid** project.
 
-## 📁 Folder Structure
+## 📁 Folder Structure 
 
 | File/Folder        | What it is                    | What it is for                                                    |
 |--------------------|-------------------------------|--------------------------------------------------------------------|
