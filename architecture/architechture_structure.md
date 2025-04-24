@@ -45,19 +45,20 @@ Service Service Service Service Service
 
 ### `2. user-profile-service`
 - **Responsible for**: Storing and managing user profiles.
-- **Stack**: Python (FastAPI) + MongoDB.
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express.
 - **User fields**: name, age, email, preferences, progress, accessibility settings.
 - **Endpoints**:
 - `GET /users/:id`
 - `PUT /users/:id`
 - `GET /users/:id/progress`
+- `PATCH /users/:id/progress`
+- `DELETE /users/:id`
 
 ---
 
 ### `3. content-service`
 - **Responsible for**: CRUD of lessons, videos, quizzes and materials.
-- **Stack**: Node.js + Express + MongoDB.
-- **Admin panel**: Optional, can be done with React Admin or Strapi.
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express.
 - **Endpoints**:
 - `GET /lessons`
 - `POST /lessons`
@@ -68,21 +69,22 @@ Service Service Service Service Service
 
 ### `4. gamification-service`
 - **Responsible for**: Points rules, progress, badges and achievements.
-- **Stack**: Python + Redis (cache) + PostgreSQL (persistence). - **Examples of achievements**:
-- "First Login"
-- "Completed 5 lessons"
-- "Logged in 7 days in a row"
+- **Stack**:Node.js + PostgreSQL + Axios + TypeScript + Express
 - **Endpoints**:
-- `GET /user/:id/badges`
-- `POST /user/:id/complete-lesson`
+- `GET /users/:id/points`
+- `POST /users/:id/points`
+- `GET /leaderboard`
 
 ---
 
-### `5. notification-service` (optional)
-- **Responsible for**: Sending emails and messages (e.g. WhatsApp, SMS).
-- **Stack**: Python + Celery + Redis + SendGrid/Twilio.
+### `5. notification-service` 
+- **Responsible for**: Sending emails and messages (e.g. EMAIL).
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express + Nodemailer.
 - **Usage**: Scheduling reminders, congratulations, lesson confirmations.
-- **Task queue**: Asynchronous with Celery.
+- **Endpoints**:
+- `POST /notifications/email`
+- `POST /notifications/:id`
+- `GET /verify-token`
 
 ---
 ### `6. front-end`
