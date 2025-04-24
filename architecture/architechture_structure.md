@@ -35,7 +35,7 @@ Service Service Service Service Service
 
 ### `1. auth-service`
 - **Responsible for**: Registration, login, authentication with JWT.
-- **Stack**: Node.js + Express + PostgreSQL + bcrypt + JWT.
+- **Stack**: Node.js + Express + PostgreSQL + bcrypt + JWT + Prisma.
 - **Endpoints**:
 - `POST /register`
 - `POST /login`
@@ -45,7 +45,7 @@ Service Service Service Service Service
 
 ### `2. user-profile-service`
 - **Responsible for**: Storing and managing user profiles.
-- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express.
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express + Prisma.
 - **User fields**: name, age, email, preferences, progress, accessibility settings.
 - **Endpoints**:
 - `GET /users/:id`
@@ -58,7 +58,7 @@ Service Service Service Service Service
 
 ### `3. content-service`
 - **Responsible for**: CRUD of lessons, videos, quizzes and materials.
-- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express.
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express + Prisma.
 - **Endpoints**:
 - `GET /lessons`
 - `POST /lessons`
@@ -69,7 +69,7 @@ Service Service Service Service Service
 
 ### `4. gamification-service`
 - **Responsible for**: Points rules, progress, badges and achievements.
-- **Stack**:Node.js + PostgreSQL + Axios + TypeScript + Express
+- **Stack**:Node.js + PostgreSQL + Axios + TypeScript + Express + Prisma.
 - **Endpoints**:
 - `GET /users/:id/points`
 - `POST /users/:id/points`
@@ -79,7 +79,7 @@ Service Service Service Service Service
 
 ### `5. notification-service` 
 - **Responsible for**: Sending emails and messages (e.g. EMAIL).
-- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express + Nodemailer.
+- **Stack**: Node.js + PostgreSQL + Axios + TypeScript + Express + Nodemailer + Prisma.
 - **Usage**: Scheduling reminders, congratulations, lesson confirmations.
 - **Endpoints**:
 - `POST /notifications/email`
