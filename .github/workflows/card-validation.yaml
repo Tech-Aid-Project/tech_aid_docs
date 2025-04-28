@@ -48,4 +48,4 @@ jobs:
           });
           console.log(`Comentário adicionado: ${comment.html_url}`);
             // Fail the job manually
-          throw new Error("Validação falhou. Verifique o comentário no PR para mais detalhes.");
+          throw new Error("Validação falhou. Verifique o comentário no PR para mais detalhes."); 
