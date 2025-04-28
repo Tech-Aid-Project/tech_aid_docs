@@ -1,6 +1,6 @@
 # 🗂️ Tech Aid – Documentation
 
-This repository contains all documentation and planning materials for the **Tech Aid** project.
+This repository contains all documentation and planning materials for the **Tech Aid** project. 
 
 ## 📁 Folder Structure 
 
